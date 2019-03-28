@@ -9,6 +9,8 @@ public class CustomHibernateDaoSupport extends HibernateDaoSupport {
 
     @Autowired
     public void anyMethodName(SessionFactory sessionFactory){
+        //HibernateTemplate hibernateTemplate = new HibernateTemplate(sessionFactory);
+        //hibernateTemplate.setCheckWriteOperations(false);
         setSessionFactory(sessionFactory);
     }
 }
